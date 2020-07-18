@@ -9,4 +9,4 @@ RUN npm install && \
 
 FROM nginx:alpine
 
-COPY --from=builder /AluraPic/dist/AluraPic/* /usr/share/nginx/html/
+COPY --from=builder /AluraPic/dist/AluraPic/ /usr/share/nginx/html/
