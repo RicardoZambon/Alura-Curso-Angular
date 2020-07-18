@@ -6,9 +6,15 @@
     "configurations": [
         {
             "command": "ng serve --open",
-            "name": "Launch",
+            "name": "Launch AluraPic",
             "request": "launch",
             "type": "node-terminal"
         },
+        {
+            "command": "cd .. && cd API && npm start",
+            "name": "Launch API",
+            "request": "launch",
+            "type": "node-terminal"
+        }
     ]
 }
