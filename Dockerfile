@@ -3,10 +3,11 @@
 # We label our stage as ‘builder’
 FROM node:14-alpine as builder
 
-COPY AluraPic/package.json AluraPic/package-lock.json ./
+WORKDIR /AluraPic
+
+COPY package.json package-lock.json ./
 
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
-WORKDIR "/AluraPic"
 RUN npm build && mkdir /ng-app && mv ./node_modules ./ng-app
 
 WORKDIR /ng-app
