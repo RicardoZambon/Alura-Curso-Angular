@@ -1,3 +1,5 @@
+![Build](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Build/badge.svg)
+
 # Alura Angular
 Projeto de desenvolvimento do curso da Alura sobre Angular.
 
