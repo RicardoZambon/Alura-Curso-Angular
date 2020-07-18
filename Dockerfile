@@ -7,7 +7,7 @@ COPY AluraPic/package.json AluraPic/package-lock.json ./
 
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
 
-cd AluraPic && RUN npm build && mkdir /ng-app && mv ./node_modules ./ng-app
+RUN cd AluraPic && npm build && mkdir /ng-app && mv ./node_modules ./ng-app
 
 WORKDIR /ng-app
 
