@@ -1,4 +1,4 @@
-npm name: Publish Docker image
+name: Publish Docker image
 on:
   release:
     types: [published]
@@ -12,7 +12,6 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with:
-          dockerfile: AluraPic/Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: ricardozambon/alura-curso-angular
