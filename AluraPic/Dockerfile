@@ -4,7 +4,7 @@ WORKDIR /AluraPic
 
 COPY . .
 
-RUN npm install && \
+RUN npm init && \
     npm run build
 
 FROM nginx:alpine
