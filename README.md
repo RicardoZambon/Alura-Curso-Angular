@@ -3,9 +3,9 @@ Projeto de desenvolvimento do curso da Alura sobre Angular.
 
 **[Parte 1: Fundamentos](https://cursos.alura.com.br/course/angular-fundamentos)** 
 
-* :eight_pointed_black_star: Bem começado, metade feito;
-* :black_square_button: Criando o primeiro componente;
-* :black_square_button: Integração com Web API's;
+* :white_check_mark: Bem começado, metade feito;
+* :white_check_mark: Criando o primeiro componente;
+* :eight_pointed_black_star: Integração com Web API's;
 * :black_square_button: Single Page Applications e rotas;
 * :black_square_button: Novo componente, novos conceitos;
 * :black_square_button: Melhorando a experiência do usuário;
