@@ -1,6 +1,6 @@
 FROM node:alpine AS builder
 
-WORKDIR /app
+WORKDIR /AluraPic
 
 COPY . .
 
@@ -9,4 +9,4 @@ RUN npm install && \
 
 FROM nginx:alpine
 
-COPY --from=builder /app/dist/* /usr/share/nginx/html/
+COPY --from=builder /AluraPic/dist/AluraPic/* /usr/share/nginx/html/
