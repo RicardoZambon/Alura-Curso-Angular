@@ -1,12 +1,13 @@
 FROM node:alpine AS builder
 
-WORKDIR /AluraPic
+WORKDIR /app
 
-COPY . .
+COPY ./AluraPic/package.json ./AluraPic/package-lock.json ./
+RUN npm install
 
-RUN npm init && \
-    npm run build
-
+COPY ./AluraPic /app/
+RUN npm run build --prod
+    
 FROM nginx:alpine
 
-COPY --from=builder /AluraPic/dist/AluraPic/* /usr/share/nginx/html/
+COPY --from=builder /app/dist/AluraPic /usr/share/nginx/html/
