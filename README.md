@@ -41,3 +41,4 @@ Projeto de desenvolvimento do curso da Alura sobre Angular.
 * :black_square_button: Global error handler e log no server side;
 * :black_square_button: Um pouco mais sobre validação;
 * :black_square_button: Um pouco mais sobre navegação e rotas;
+
