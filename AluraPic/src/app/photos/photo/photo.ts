@@ -1,5 +1,3 @@
-import { url } from "inspector"
-
 export interface Photo {
   id: number;
 
