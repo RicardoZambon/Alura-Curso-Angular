@@ -1,6 +1,8 @@
-![Publish Docker AluraPic](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20AluraPic/badge.svg) ![Publish Docker API](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20API/badge.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/ricardozambon/alura-curso-angular) ![Publish Docker AluraPic](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20AluraPic/badge.svg) ![Publish Docker API](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20API/badge.svg)
 
-[Azure WebApp AluraPic](https://alura-curso-angular-alurapic.azurewebsites.net/) / [Azure WebApp API](https://alura-curso-angular-api.azurewebsites.net/)
+[Azure WebApp AluraPic](https://alura-curso-angular-alurapic.azurewebsites.net/) ![Docker AluraPic Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-alurapic)
+
+[Azure WebApp API](https://alura-curso-angular-api.azurewebsites.net/) ![Docker API Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-api)
 
 # Alura Angular
 Projeto de desenvolvimento do curso da Alura sobre Angular.
