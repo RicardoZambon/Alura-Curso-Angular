@@ -9,9 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Alura Pic';
 
-  photos = [];
+  photos: object[] = [];
 
   constructor(http: HttpClient) {
-
+    http
+      .get<object[]>('http://localhost:3000/flavio/photos')
+      .subscribe(photos => this.photos = photos);
   }
 }
