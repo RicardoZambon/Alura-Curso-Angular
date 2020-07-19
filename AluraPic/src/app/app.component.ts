@@ -1,5 +1,5 @@
+import { Photo } from './photo';
 import { PhotoService } from './photos/photo/photo.service';
-import { HttpClient, HttpHandler } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Alura Pic';
 
-  photos: object[] = [];
+  photos: Photo[] = [];
 
   constructor(photoService: PhotoService) {
     photoService
