@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { PhotoService } from './photos/photo/photo.service';
 import { Component } from '@angular/core';
 import { Photo } from './photos/photo/photo';
@@ -9,6 +10,7 @@ import { Photo } from './photos/photo/photo';
 })
 export class AppComponent {
   title = 'Alura Pic';
+  api = environment.apiURL;
 
   photos: Photo[] = [];
 
