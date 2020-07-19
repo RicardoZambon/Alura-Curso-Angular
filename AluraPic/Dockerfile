@@ -6,7 +6,7 @@ COPY ./AluraPic/package.json ./AluraPic/package-lock.json ./
 RUN npm install
 
 COPY ./AluraPic /app/
-RUN npm run build --prod
+RUN npm run build-prod
 
 FROM nginx:alpine
 
