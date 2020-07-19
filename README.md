@@ -1,4 +1,4 @@
-![Publish Docker API](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20API/badge.svg) ![Publish Docker AluraPic](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20AluraPic/badge.svg)
+![Publish Docker AluraPic](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20AluraPic/badge.svg) ![Publish Docker API](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20API/badge.svg)
 
 [Azure WebApp AluraPic](https://alura-curso-angular-alurapic.azurewebsites.net/) / [Azure WebApp API](https://alura-curso-angular-api.azurewebsites.net/)
 
