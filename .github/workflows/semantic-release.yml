@@ -52,14 +52,6 @@ jobs:
         run: npm ci
         working-directory: ./AluraPic
 
-      - name: Docker Build AluraPic
-        run: docker build -t ricardozambon/alura-curso-angular-alurapic .
-        working-directory: ./AluraPic
-
-      - name: Docker Build API
-        run: docker build -t ricardozambon/alura-curso-angular-api .
-        working-directory: ./API
-
       - name: Release
         run: npx semantic-release
         working-directory: ./AluraPic
@@ -69,9 +61,8 @@ jobs:
       - id: get_version
         name: Output version
         run: echo "::set-output name=version::${{ env.VERSION }}"
-          
 
-  docker_push:
+  docker:
     # Only runs after successfully generated the package version
     if: needs.release.outputs.version != ''
     runs-on: ubuntu-latest
@@ -79,6 +70,14 @@ jobs:
     steps:
       - name: Docker login
         run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+
+      - name: Docker Build AluraPic
+        run: docker build -t ricardozambon/alura-curso-angular-alurapic .
+        working-directory: ./AluraPic
+
+      - name: Docker Build API
+        run: docker build -t ricardozambon/alura-curso-angular-api .
+        working-directory: ./API
 
       - name: Push AluraPic to DockerHub
         run: |
