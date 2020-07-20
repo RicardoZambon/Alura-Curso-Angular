@@ -1,3 +1,4 @@
+import { ErrorsModule } from './errors/errors.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,7 @@ import { PhotosModule } from './photos/photos.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ErrorsModule,
     PhotosModule
   ],
   providers: [],
