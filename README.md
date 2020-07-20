@@ -1,8 +1,6 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/ricardozambon/alura-curso-angular) ![Publish Docker AluraPic](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20AluraPic/badge.svg) ![Publish Docker API](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Publish%20Docker%20API/badge.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/ricardozambon/alura-curso-angular?logo=github&logoColor=white) ![Release](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Semantic-Release/badge.svg) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ricardozambon/alura-curso-angular?logo=github&logoColor=white) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-![Docker AluraPic Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-alurapic) [Azure WebApp AluraPic](https://alura-curso-angular-alurapic.azurewebsites.net/)
-
-![Docker API Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-api) [Azure WebApp API](https://alura-curso-angular-api.azurewebsites.net/)
+![Docker Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-alurapic?color=blue&label=AluraPic%20docker%20pulls&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-api?color=blueviolet&label=API%20docker%20pulls&logo=docker&logoColor=white) [![Azure WebApp AluraPic](https://img.shields.io/badge/Azure%20WebApp-AluraPic-blue?logo=microsoft-azure&logoColor=white)](https://alura-curso-angular-alurapic.azurewebsites.net) [![Azure WebApp API](https://img.shields.io/badge/Azure%20WebApp-API-blueviolet?logo=microsoft-azure&logoColor=white)](https://alura-curso-angular-api.azurewebsites.net)
 
 # Alura Angular
 Projeto de desenvolvimento do curso da Alura sobre Angular.
