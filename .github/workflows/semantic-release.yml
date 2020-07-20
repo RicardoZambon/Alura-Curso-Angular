@@ -64,7 +64,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
-    docker push:
+    docker-push:
       # Only runs after successfully generated the package version
       if: env.VERSION != ''
       runs-on: ubuntu-latest
