@@ -72,9 +72,7 @@
       "@semantic-release/changelog",
       "semantic-release-docker",
 		  ["@semantic-release/exec", {
-		    "publishCmd": "docker tag ricardozambon/alura-curso-angular-api:latest ricardozambon/alura-curso-angular-api:${nextRelease.version}",
-        "publishCmd": "docker push ricardozambon/alura-curso-angular-api:${nextRelease.version}",
-        "publishCmd": "docker push ricardozambon/alura-curso-angular-api:latest"
+		    "publishCmd": "echo ::set-env name=VERSION::${nextRelease.version}"
 		  }]
     ],
     "verifyConditions": {
