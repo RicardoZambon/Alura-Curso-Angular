@@ -70,10 +70,10 @@
       "@semantic-release/release-notes-generator",
       "@semantic-release/github",
       "@semantic-release/changelog",
-      "semantic-release-docker",
 		  ["@semantic-release/exec", {
 		    "publishCmd": "echo ::set-env name=VERSION::${nextRelease.version}"
-		  }]
+		  }],
+      "semantic-release-docker"
     ],
     "verifyConditions": {
       "path": "semantic-release-docker",
