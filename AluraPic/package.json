@@ -67,12 +67,14 @@
       "@semantic-release/git",
       "semantic-release-docker"
     ],
-    "publish": [
-      {
-        "path": "semantic-release-docker",
-        "name": "ricardozambon/alura-curso-angular-alurapic"
-      }
-    ],
-	"branches": ["master", "1stPart-3rdClass"]
+	"verifyConditions": {
+      "path": "semantic-release-docker",
+      "registryUrl": "docker.io"
+    },
+    "publish": {
+		"path": "semantic-release-docker",
+		"name": "ricardozambon/alura-curso-angular-alurapic"
+	},
+	"branches": ["master"]
   }
 }
