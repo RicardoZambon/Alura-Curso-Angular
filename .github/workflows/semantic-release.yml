@@ -61,3 +61,9 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Push API to DockerHub
+        run: |
+          docker tag ricardozambon/alura-curso-angular-api:latest ricardozambon/alura-curso-angular-api:${{ env.VERSION }}
+          docker push ricardozambon/alura-curso-angular-api:${nextRelease.version}
+          docker push ricardozambon/alura-curso-angular-api:latest
+
