@@ -31,8 +31,10 @@
     "@angular-devkit/build-angular": "~0.1000.3",
     "@angular/cli": "~10.0.3",
     "@angular/compiler-cli": "~10.0.4",
+    "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",
-    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.7",
+    "@semantic-release/release-notes-generator": "^9.0.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -64,19 +66,21 @@
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
-	  "@semantic-release/release-notes-generator",
+      "@semantic-release/release-notes-generator",
       "@semantic-release/github",
-	  "@semantic-release/changelog",
+      "@semantic-release/changelog",
       "semantic-release-docker"
     ],
-	"verifyConditions": {
+    "verifyConditions": {
       "path": "semantic-release-docker",
       "registryUrl": "docker.io"
     },
     "publish": {
-		"path": "semantic-release-docker",
-		"name": "ricardozambon/alura-curso-angular-alurapic"
-	},
-	"branches": ["master"]
+      "path": "semantic-release-docker",
+      "name": "ricardozambon/alura-curso-angular-alurapic"
+    },
+    "branches": [
+      "master"
+    ]
   }
 }
