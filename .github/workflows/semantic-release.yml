@@ -41,19 +41,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        
       #- name: Setup Node.js
       #  uses: actions/setup-node@v1
       #  with:
       #    node-version: 12.x
+
       - name: Install
         run: npm ci
         working-directory: ./AluraPic
+
       - name: Docker Build AluraPic
         run: docker build -t ricardozambon/alura-curso-angular-alurapic .
         working-directory: ./AluraPic
+
       - name: Docker Build API
         run: docker build -t ricardozambon/alura-curso-angular-api .
         working-directory: ./API
+
       - name: Release
         run: npx semantic-release
         working-directory: ./AluraPic
@@ -61,14 +66,18 @@ jobs:
         #  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         #  DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Docker login
+        run: docker login -u={{ secrets.DOCKER_USERNAME }} -p=${{ secrets.DOCKER_PASSWORD }}
+
       - name: Push AluraPic to DockerHub
         run: |
           docker tag ricardozambon/alura-curso-angular-alurapic:latest ricardozambon/alura-curso-angular-alurapic:${{ env.VERSION }}
-          docker push ricardozambon/alura-curso-angular-alurapic:${nextRelease.version}
+          docker push ricardozambon/alura-curso-angular-alurapic:${{ env.VERSION }}
           docker push ricardozambon/alura-curso-angular-alurapic:latest
+
       - name: Push API to DockerHub
         run: |
           docker tag ricardozambon/alura-curso-angular-api:latest ricardozambon/alura-curso-angular-api:${{ env.VERSION }}
-          docker push ricardozambon/alura-curso-angular-api:${nextRelease.version}
+          docker push ricardozambon/alura-curso-angular-api:${{ env.VERSION }}
           docker push ricardozambon/alura-curso-angular-api:latest
-
