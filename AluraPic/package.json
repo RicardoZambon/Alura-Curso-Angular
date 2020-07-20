@@ -31,6 +31,8 @@
     "@angular-devkit/build-angular": "~0.1000.3",
     "@angular/cli": "~10.0.3",
     "@angular/compiler-cli": "~10.0.4",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -45,6 +47,7 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
     "semantic-release": "^17.1.1",
+    "semantic-release-docker": "^2.2.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
@@ -57,5 +60,19 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/git",
+      "semantic-release-docker"
+    ],
+    "publish": [
+      {
+        "path": "semantic-release-docker",
+        "name": "ricardozambon/alura-curso-angular-alurapic"
+      }
+    ],
+	"branches": ["master", "1stPart-3rdClass"]
   }
 }
