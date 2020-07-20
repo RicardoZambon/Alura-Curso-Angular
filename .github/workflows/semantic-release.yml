@@ -48,6 +48,8 @@ jobs:
       - name: Install
         run: npm ci
         working-directory: ./AluraPic
+      - name: Docker
+        run: docker build -t ricardozambon/alura-curso-angular-alurapic .
       - name: Release
         run: npx semantic-release
         working-directory: ./AluraPic
