@@ -9,7 +9,7 @@ Projeto de desenvolvimento do curso da Alura sobre Angular.
 
 * :white_check_mark: Bem começado, metade feito;
 * :white_check_mark: Criando o primeiro componente;
-* :eight_pointed_black_star: Integração com Web API's;
+* :white_check_mark: Integração com Web API's;
 * :black_square_button: Single Page Applications e rotas;
 * :black_square_button: Novo componente, novos conceitos;
 * :black_square_button: Melhorando a experiência do usuário;
