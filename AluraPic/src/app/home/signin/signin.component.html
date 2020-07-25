@@ -3,12 +3,12 @@
 <form [formGroup]="loginForm" class="form mt-4">
     <div class="form-group">
         <input formControlName="username" class="form-control" placeholder="username" autofocus />
-        <small *ngIf="loginForm.get('username').errors?.required" class="text-danger d-block mt-2">Username is required!</small>
+        <app-vmessage *ngIf="loginForm.get('username').errors?.required" text="Username is required!"></app-vmessage>
     </div>
     
     <div class="form-group">
         <input formControlName="password" class="form-control" type="password" placeholder="password" />
-        <small *ngIf="loginForm.get('password').errors?.required" class="text-danger d-block mt-2">Password is required!</small>
+        <app-vmessage *ngIf="loginForm.get('password').errors?.required" text="Password is required!"></app-vmessage>
     </div>
 
     <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary btn-block">login</button>
