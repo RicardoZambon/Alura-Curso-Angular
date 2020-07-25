@@ -14,7 +14,7 @@ Projeto de desenvolvimento do curso da Alura sobre Angular.
 * :white_check_mark: Single Page Applications e rotas;
 * :white_check_mark: Novo componente, novos conceitos;
 * :white_check_mark: Melhorando a experiência do usuário;
-* :eight_pointed_black_star: Lapidando ainda mais nossa aplicação;
+* :white_check_mark: Lapidando ainda mais nossa aplicação;
 
 **[Parte 2: Autenticação, Forms e lazy loading](https://cursos.alura.com.br/course/angular-autenticacao)**
 
