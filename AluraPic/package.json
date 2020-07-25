@@ -24,6 +24,7 @@
     "@angular/router": "~10.0.4",
     "@semantic-release/exec": "^5.0.0",
     "bootstrap": "^4.5.0",
+    "font-awesome": "^4.7.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -61,7 +62,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./AluraPic/node_modules/cz-conventional-changelog"
     }
   },
   "release": {
@@ -70,9 +71,12 @@
       "@semantic-release/release-notes-generator",
       "@semantic-release/github",
       "@semantic-release/changelog",
-		  ["@semantic-release/exec", {
-		    "publishCmd": "echo ::set-env name=VERSION::${nextRelease.version}"
-		  }]
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "echo ::set-env name=VERSION::${nextRelease.version}"
+        }
+      ]
     ],
     "branches": [
       "master"
