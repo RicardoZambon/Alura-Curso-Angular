@@ -61,7 +61,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./AluraPic/node_modules/cz-conventional-changelog"
     }
   },
   "release": {
@@ -70,9 +70,12 @@
       "@semantic-release/release-notes-generator",
       "@semantic-release/github",
       "@semantic-release/changelog",
-		  ["@semantic-release/exec", {
-		    "publishCmd": "echo ::set-env name=VERSION::${nextRelease.version}"
-		  }]
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "echo ::set-env name=VERSION::${nextRelease.version}"
+        }
+      ]
     ],
     "branches": [
       "master"
