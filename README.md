@@ -1,6 +1,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/ricardozambon/alura-curso-angular?logo=github&logoColor=white) ![Release](https://github.com/RicardoZambon/Alura-Curso-Angular/workflows/Semantic-Release/badge.svg) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ricardozambon/alura-curso-angular?logo=github&logoColor=white) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-![Docker Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-alurapic?color=blue&label=AluraPic%20docker%20pulls&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-api?color=blueviolet&label=API%20docker%20pulls&logo=docker&logoColor=white) [![Azure WebApp AluraPic](https://img.shields.io/badge/Azure%20WebApp-AluraPic-blue?logo=microsoft-azure&logoColor=white)](https://alura-curso-angular-alurapic.azurewebsites.net) [![Azure WebApp API](https://img.shields.io/badge/Azure%20WebApp-API-blueviolet?logo=microsoft-azure&logoColor=white)](https://alura-curso-angular-api.azurewebsites.net)
+![Docker Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-alurapic?color=blue&label=AluraPic%20docker%20pulls&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/ricardozambon/alura-curso-angular-api?color=blueviolet&label=API%20docker%20pulls&logo=docker&logoColor=white)
+[![Azure WebApp AluraPic](https://img.shields.io/badge/AluraPic%20Azure%20WebApp-blue?logo=microsoft-azure&logoColor=white)](https://alura-curso-angular-alurapic.azurewebsites.net) [![Azure WebApp API](https://img.shields.io/badge/API%20Azure%20WebApp-blueviolet?logo=microsoft-azure&logoColor=white)](https://alura-curso-angular-api.azurewebsites.net)
 
 # Alura Angular
 Projeto de desenvolvimento do curso da Alura sobre Angular.
@@ -12,7 +13,7 @@ Projeto de desenvolvimento do curso da Alura sobre Angular.
 * :white_check_mark: Integração com Web API's;
 * :white_check_mark: Single Page Applications e rotas;
 * :white_check_mark: Novo componente, novos conceitos;
-* :black_square_button: Melhorando a experiência do usuário;
+* :white_check_mark: Melhorando a experiência do usuário;
 * :black_square_button: Lapidando ainda mais nossa aplicação;
 
 **[Parte 2: Autenticação, Forms e lazy loading](https://cursos.alura.com.br/course/angular-autenticacao)**
