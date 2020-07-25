@@ -1,10 +1,9 @@
-import { ErrorsModule } from './errors/errors.module';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-
+import { ErrorsModule } from './errors/errors.module';
 import { PhotosModule } from './photos/photos.module';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { PhotosModule } from './photos/photos.module';
     ErrorsModule,
     PhotosModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
