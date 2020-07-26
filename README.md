@@ -18,7 +18,7 @@ Projeto de desenvolvimento do curso da Alura sobre Angular.
 
 **[Parte 2: Autenticação, Forms e lazy loading](https://cursos.alura.com.br/course/angular-autenticacao)**
 
-* :eight_pointed_black_star: O componente para login;
+* :white_check_mark: O componente para login;
 * :black_square_button: Autenticação e o papel do token;
 * :black_square_button: Usuário logado e proteção de rotas;
 * :black_square_button: Registro de novos usuários;
