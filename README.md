@@ -20,7 +20,7 @@ Projeto de desenvolvimento do curso da Alura sobre Angular.
 
 * :white_check_mark: O componente para login;
 * :white_check_mark: Autenticação e o papel do token;
-* :black_square_button: Usuário logado e proteção de rotas;
+* :eight_pointed_black_star: Usuário logado e proteção de rotas;
 * :black_square_button: Registro de novos usuários;
 * :black_square_button: Rotas filhas e lazy loading;
 
